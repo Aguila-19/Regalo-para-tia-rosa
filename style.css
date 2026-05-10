@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 430px;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: aparecer 1.2s ease;
+}
+
+.heart {
+  font-size: 55px;
+  color: #e91e63;
+  animation: latir 1.2s infinite;
+}
+
+h1 {
+  color: #d81b60;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+h2 {
+  color: #8e244d;
+  font-size: 21px;
+  margin-top: 0;
+}
+
+.intro {
+  color: #555;
+  font-size: 16px;
+}
+
+.poem {
+  background: #fff0f5;
+  border-left: 5px solid #e91e63;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  color: #6a1b3a;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.message {
+  color: #444;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 15px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
+button:hover {
+  background: #c2185b;
+}
+
+.hidden {
+  display: none;
+}
+
+#sorpresa {
+  margin-top: 20px;
+  background: #ffe4ec;
+  padding: 15px;
+  border-radius: 15px;
+  color: #7b1b43;
+  line-height: 1.6;
+  animation: aparecer 1s ease;
+}
+
+@keyframes latir {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
